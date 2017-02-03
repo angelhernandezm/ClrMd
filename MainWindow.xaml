@@ -1,0 +1,22 @@
+﻿<Window x:Class="ClrMd.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="clr-namespace:ClrMd.Controls"
+        Title="ClrMd - Managed Visual SOS" Height="200" Width="570" ResizeMode="NoResize">
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="160"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+
+		<StackPanel Orientation="Horizontal" Grid.Row="0">
+			<controls:ProcessInformation x:Name="processInformationPanel" />
+		</StackPanel>
+
+
+
+	</Grid>
+</Window>
